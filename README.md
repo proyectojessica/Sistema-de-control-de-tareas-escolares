@@ -34,9 +34,16 @@
 
 -----
 
+
 ## Notas del equipo
 
 - **HU01** y **HU02** corresponden al trabajo registrado en el documento `PTO_HU_11-12`.
 - **HU03** en adelante son historias proyectadas para completar el producto mínimo viable.
 - La persistencia real con backend (**HU09**) está deliberadamente pospuesta, conforme a la decisión tomada en HU02.
 - Las estimaciones son orientativas y deben ajustarse en la planificación de cada sprint.
+
+- ## INTENGRANTES:
+Caballero Ortiz Nancy Denisse- ducumentadora
+López Xochiquiquixqui Uriel -product owner
+Peralta Trujillo Oliver -Delevelopers
+Sánchez Marín María del Rosario -scrum máster
