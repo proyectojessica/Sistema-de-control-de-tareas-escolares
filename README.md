@@ -43,7 +43,7 @@
 - Las estimaciones son orientativas y deben ajustarse en la planificación de cada sprint.
 
 ## INTENGRANTES:
--Caballero Ortiz Nancy Denisse- ducumentadora
--López Xochiquiquixqui Uriel -product owner
--Peralta Trujillo Oliver -Delevelopers
--Sánchez Marín María del Rosario -scrum máster
+- Caballero Ortiz Nancy Denisse- ducumentadora
+- López Xochiquiquixqui Uriel -product owner
+- Peralta Trujillo Oliver -Delevelopers
+- Sánchez Marín María del Rosario -scrum máster
