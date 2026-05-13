@@ -3,7 +3,9 @@
 
 **Proyecto:** Aplicación web de organización de notas  
 **Responsable frontend:** Peralta Trujillo Oliver  
-**Fecha de inicio:** 11/05/2025  
+**Responsable backend:** López Xochiquiquixqui Uriel/Sánchez Marín Maria del Rosario
+**Fecha de inicio:** 11/05/2026 
+**Fecha de entrega:** Entre 01/06/2026 y 03/06/2026
 **Tecnologías:** HTML5 / CSS3 / JavaScript — VS Code
 
 -----
