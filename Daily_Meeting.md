@@ -4,7 +4,7 @@
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** |Tablero Kamban y cronograma | Agregar tareas nuevas | Ninguno. |
+| **Denisse** |Tablero Kanban y cronograma | Agregar tareas nuevas | Ninguno. |
 | **Rosario** | Crear repositorio | Guiar al equipo | Ninguno. |
 | **Uriel** |NADA | Product Backlog |Ninguno. |
 | **Oliver** |Trazar la ruta   | Historias de usuario | Ninguno. |
