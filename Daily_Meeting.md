@@ -10,3 +10,13 @@
 | **Oliver** |Trazar la ruta   | Historias de usuario | Ninguno. |
 
 ---
+**Fecha:** 13 de mayo de 2026  
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** | Agregar tareas nuevas | Checar el tablero kanban | Ninguno. |
+| **Rosario** | Guiar al equipo | Acompletar el cronograma con tareas | Ninguno. |
+| **Uriel** | Product Backlog | Ni idea xd |Ninguno. |
+| **Oliver** | Historias de usuario | Seguir la primera historia de usuario | Ninguno. |
+
+---
