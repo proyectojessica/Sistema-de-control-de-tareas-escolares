@@ -8,7 +8,7 @@
 | **Rosario** | Crear repositorio | Guiar al equipo | Ninguno. |
 | **Uriel** |NADA | Product Backlog |Ninguno. |
 | **Oliver** |Trazar la ruta   | Historias de usuario | Ninguno. |
-
+ 
 ---
 **Fecha:** 13 de mayo de 2026  
 
