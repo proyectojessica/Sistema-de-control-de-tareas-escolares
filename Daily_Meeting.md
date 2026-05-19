@@ -16,7 +16,7 @@
 | :--- | :--- | :--- | :--- |
 | **Denisse** | Agregar tareas nuevas | Checar el tablero kanban | Ninguno. |
 | **Rosario** | Guiar al equipo | Acompletar el cronograma con tareas | Ninguno. |
-| **Uriel** | Product Backlog | Retroalimentaciob al equipo |Ninguno. |
+| **Uriel** | Product Backlog | Retroalimentacion al equipo, porque denisse no hace nada  |Ninguno. |
 | **Oliver** | Historias de usuario | Seguir la 1ra, 2da y 3ra historia de usuario | Ninguno. |
 
 ---
