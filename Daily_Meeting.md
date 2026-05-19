@@ -26,7 +26,7 @@
 | :--- | :--- | :--- | :--- |
 | **Denisse** | Checar el tablero kanban |  | Ninguno. |
 | **Rosario** | Acompletar el cronograma con tareas |  | Ninguno. |
-| **Uriel** | Ni idea xd |  |Ninguno. |
+| **Uriel** | Ni idea xd | versión beta del codigo |Ninguno. |
 | **Oliver** | Seguir la 1ra, 2da y 3ra historia de usuario |  | Ninguno. |
 
 ---
