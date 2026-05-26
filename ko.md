@@ -1,31 +1,28 @@
-```mermaid
-gantt
-    title Registro de Daily Meetings — Seguimiento de Operaciones
-    dateFormat  YYYY-MM-DD
-    section Denisse
-        Tablero Kanban y cronograma     :done,    d1, 2026-05-12, 1d
-        Agregar tareas nuevas           :done,    d2, 2026-05-13, 1d
-        Reporte de avances + Logo IA    :done,    d3, 2026-05-18, 1d
-        Evaluación Equipo 10            :done,    d4, 2026-05-22, 1d
-        Documentar                      :done,    d5, 2026-05-25, 2d
+📋 Registro de Daily Meetings
+🚀 Proyecto: Seguimiento de Operaciones
 
-    section Rosario
-        Crear repositorio               :done,    r1, 2026-05-12, 1d
-        Guiar al equipo                 :done,    r2, 2026-05-13, 1d
-        Reporte de avances              :done,    r3, 2026-05-18, 1d
-        Evaluación Equipo 10            :done,    r4, 2026-05-22, 1d
-        Subir archivos de la BD         :active,  r5, 2026-05-25, 2d
+📅 12 de mayo de 2026
+👤 Miembro✅ Completado (Ayer)🎯 Plan de Hoy🚧 BloqueosDenisseTablero Kanban y cronogramaAgregar tareas nuevas—RosarioCrear repositorioGuiar al equipo—Uriel(Sin actividad)Product Backlog—OliverTrazar la rutaHistorias de usuario—
 
-    section Uriel
-        Product Backlog                 :done,    u1, 2026-05-13, 1d
-        Retroalimentación + Logo IA     :done,    u2, 2026-05-18, 1d
-        Evaluación Equipo 10            :done,    u3, 2026-05-22, 1d
-        Documentar                      :done,    u4, 2026-05-25, 1d
-        Crear archivos de la BD         :active,  u5, 2026-05-26, 1d
+📅 13 de mayo de 2026
+👤 Miembro✅ Completado (Ayer)🎯 Plan de Hoy🚧 BloqueosDenisseAgregar tareas nuevasChecar el tablero Kanban—RosarioGuiar al equipoCompletar el cronograma con tareas—UrielProduct BacklogRetroalimentación al equipo—OliverHistorias de usuarioSeguir la 1ra, 2da y 3ra historia de usuario—
 
-    section Oliver
-        Trazar la ruta                  :done,    o1, 2026-05-12, 1d
-        Historias de usuario 1-3        :done,    o2, 2026-05-13, 5d
-        Evaluación Equipo 10            :done,    o3, 2026-05-22, 1d
-        Historia de usuario 4           :active,  o4, 2026-05-25, 2d
-```
+📅 18 de mayo de 2026
+
+🗣️ Reporte general de avances — cada miembro presentó su progreso al equipo.
+🎨 Highlight: Denisse y Uriel diseñaron el logotipo del programa con apoyo de IA.
+
+
+📅 22 de mayo de 2026
+
+📊 Sesión de evaluación — el equipo realizó la evaluación del Equipo 10 mediante una rúbrica/cuadro comparativo.
+
+
+📅 25 de mayo de 2026
+👤 Miembro✅ Completado (Ayer)🎯 Plan de Hoy🚧 BloqueosDenisseDocumentarDocumentar—RosarioGuiar al equipoSubir archivos de la BD—UrielDocumentarCrear archivos de la BD—OliverHistorias de usuarioSeguir la 4ta historia de usuario—
+
+📅 26 de mayo de 2026
+👤 Miembro✅ Completado (Ayer)🎯 Plan de Hoy🚧 BloqueosDenisseDocumentarDocumentar—RosarioGuiar al equipoSubir archivos de la BD—UrielDocumentarCrear archivos de la BD—OliverHistorias de usuarioSeguir la 4ta historia de usuario—
+
+
+Registro generado por el equipo — Proyecto: Seguimiento de Operaciones 🛠️
