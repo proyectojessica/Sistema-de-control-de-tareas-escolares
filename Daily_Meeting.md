@@ -22,12 +22,12 @@
 ---
 **Fecha:** 18 de mayo de 2026  
 
-| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
-| :--- | :--- | :--- | :--- |
-| **Denisse** | Checar el tablero kanban |  | Ninguno. |
-| **Rosario** | Acompletar el cronograma con tareas |  | Ninguno. |
-| **Uriel** | Ni idea xd | versión beta del codigo |Ninguno. |
-| **Oliver** | Seguir la 1ra, 2da y 3ra historia de usuario |  | Ninguno. |
+Reportamos nuestros avances, escuchamos los reportes de los demas. Al mismo tiempo Denisse y Uriel(con ayuda de la IA hicieron un logo para nuestro programa) 
 
 ---
+**Fecha:** 22 de mayo de 2026
 
+Nos toco evaluar al equipo 10 mediante un cuadro. 
+
+---
+**Fecha:** 25 de mayo de 2026
