@@ -1,4 +1,4 @@
-# Registro de Daily Meeting
+# Registro de Daily Meeting 
 **Fecha:** 12 de mayo de 2026  
 **Proyecto:** Seguimiento de Operaciones
 
