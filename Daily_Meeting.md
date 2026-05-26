@@ -22,14 +22,14 @@
 ---
 **Fecha:** 18 de mayo de 2026  
 
-  Reporte general de avances — cada miembro presentó su progreso al equipo.
- **Nota:** Denisse y Uriel diseñaron el logotipo del programa con apoyo de IA.
+ > Reporte general de avances — cada miembro presentó su progreso al equipo.
+ > **Nota:** Denisse y Uriel diseñaron el logotipo del programa con apoyo de IA.
 
 ---
 **Fecha:** 22 de mayo de 2026
 
- El equipo realizó la evaluación del Equipo 10 mediante una rúbrica/cuadro.
- **Nota:** Actividad evaluativa realizada en clase. 
+> El equipo realizó la evaluación del Equipo 10 mediante una rúbrica/cuadro.
+> **Nota:** Actividad evaluativa realizada en clase. 
 
 ---
 **Fecha:** 25 de mayo de 2026
