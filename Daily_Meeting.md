@@ -16,7 +16,7 @@
 | :--- | :--- | :--- | :--- |
 | **Denisse** | Agregar tareas nuevas | Checar el tablero kanban | Ninguno. |
 | **Rosario** | Guiar al equipo | Acompletar el cronograma con tareas | Ninguno. |
-| **Uriel** | Product Backlog | Retroalimentacion al equipo, porque denisse no hace nada  |Ninguno. |
+| **Uriel** | Product Backlog | Retroalimentacion al equipo|Ninguno. |
 | **Oliver** | Historias de usuario | Seguir la 1ra, 2da y 3ra historia de usuario | Ninguno. |
 
 ---
@@ -31,3 +31,22 @@ Nos toco evaluar al equipo 10 mediante un cuadro.
 
 ---
 **Fecha:** 25 de mayo de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** | Documentar  | Documentar | Ninguno. |
+| **Rosario** | Guiar al equipo | Subir los archivos de la BD | Ninguno. |
+| **Uriel** | Documentar | Crear los archivos de la BD  |Ninguno. |
+| **Oliver** | Historias de usuario | Seguir la 4ta historia de usuario | Ninguno. |
+
+---
+**Fecha:** 26 de mayo de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** | Documentar  | Documentar | Ninguno. |
+| **Rosario** | Guiar al equipo | Subir los archivos de la BD | Ninguno. |
+| **Uriel** | Documentar | Crear los archivos de la BD  |Ninguno. |
+| **Oliver** | Historias de usuario | Seguir la 4ta historia de usuario | Ninguno. |
+
+---
