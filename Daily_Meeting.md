@@ -28,7 +28,8 @@
 ---
 **Fecha:** 22 de mayo de 2026
 
-Nos toco evaluar al equipo 10 mediante un cuadro. 
+ El equipo realizó la evaluación del Equipo 10 mediante una rúbrica/cuadro.
+ **Nota:** Actividad evaluativa realizada en clase. 
 
 ---
 **Fecha:** 25 de mayo de 2026
