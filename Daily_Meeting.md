@@ -6,7 +6,7 @@
 | :--- | :--- | :--- | :--- |
 | **Denisse** |Tablero Kanban y cronograma | Agregar tareas nuevas | Ninguno. |
 | **Rosario** | Crear repositorio | Guiar al equipo | Ninguno. |
-| **Uriel** |NADA | Product Backlog |Ninguno. |
+| **Uriel** |(Sin actividad) | Product Backlog |Ninguno. |
 | **Oliver** |Trazar la ruta   | Historias de usuario | Ninguno. |
  
 ---
@@ -22,7 +22,8 @@
 ---
 **Fecha:** 18 de mayo de 2026  
 
-Reportamos nuestros avances, escuchamos los reportes de los demas. Al mismo tiempo Denisse y Uriel(con ayuda de la IA hicieron un logo para nuestro programa) 
+  Reporte general de avances — cada miembro presentó su progreso al equipo.
+ **Nota:** Denisse y Uriel diseñaron el logotipo del programa con apoyo de IA.
 
 ---
 **Fecha:** 22 de mayo de 2026
