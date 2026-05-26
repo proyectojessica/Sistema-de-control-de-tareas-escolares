@@ -34,4 +34,8 @@
 ## 📸 Avance — 26 de mayo de 2026
 > Capturas del progreso del día
 
-![Avance 26 mayo](img/avance_26mayo.png)
+<img width="1276" height="699" alt="image" src="https://github.com/user-attachments/assets/bc28bb7c-0081-4269-8f41-0487ad75e29f" />
+
+<img width="1051" height="700" alt="image" src="https://github.com/user-attachments/assets/432aa73a-6d81-412e-ba03-8c4fc75c69ad" />
+
+
