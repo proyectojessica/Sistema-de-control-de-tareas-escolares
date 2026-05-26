@@ -36,19 +36,19 @@
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** | Documentar  | Documentar | Ninguno. |
-| **Rosario** | Guiar al equipo | Subir los archivos de la BD | Ninguno. |
-| **Uriel** | Documentar | Crear los archivos de la BD  |Ninguno. |
-| **Oliver** | Historias de usuario | Seguir la 4ta historia de usuario | Ninguno. |
+| **Denisse** | Retroalimentacion al equipo 10 | Documentar | Ninguno. |
+| **Rosario** | Retroalimentacion al equipo 10 | Subir los archivos de la BD | Ninguno. |
+| **Uriel** | Retroalimentacion al equipo 10 | Crear los archivos de la BD  |Ninguno. |
+| **Oliver** |Retroalimentacion al equipo 10 | Hacer la 4ta historia de usuario | Ninguno. |
 
 ---
 **Fecha:** 26 de mayo de 2026
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** | Documentar  | Documentar | Ninguno. |
-| **Rosario** | Guiar al equipo | Subir los archivos de la BD | Ninguno. |
-| **Uriel** | Documentar | Crear los archivos de la BD  |Ninguno. |
-| **Oliver** | Historias de usuario | Seguir la 4ta historia de usuario | Ninguno. |
+| **Denisse** | Documentar  | Documentar y agrgar tareas al tablero Kanban| Ninguno. |
+| **Rosario** | Subir los archivos de la BD | Conectar la base e datos | Ninguno. |
+| **Uriel** | Crear los archivos de la BD | Ayudar a conectar la base datos  |Ninguno. |
+| **Oliver** | Hacer la 4ta historia de usuario |Hacer la 5ta historia de usuario | Ninguno. |
 
 ---
