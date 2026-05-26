@@ -23,3 +23,10 @@
 
 
 <img width="930" height="398" alt="image" src="https://github.com/user-attachments/assets/793501f1-8063-46db-950f-ec833f2dbca1" />
+
+---
+
+## 🎨 Logo del Proyecto
+> Diseñado por **Denisse** y **Uriel** con apoyo de IA — 18 de mayo de 2026
+
+<img width="676" height="369" alt="image" src="https://github.com/user-attachments/assets/0063f8d4-4c19-4b4f-ba36-5862cae403e2" />
