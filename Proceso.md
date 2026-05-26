@@ -5,6 +5,11 @@
 
 ---
 
+## 🎨 Logo del Proyecto
+> Diseñado por **Denisse** y **Uriel** con apoyo de IA — 18 de mayo de 2026
+
+<img width="676" height="369" alt="image" src="https://github.com/user-attachments/assets/0063f8d4-4c19-4b4f-ba36-5862cae403e2" />
+
 ## 📋 Tablero Kanban
 > Estado del tablero al **25 de mayo de 2026**
 
@@ -26,7 +31,7 @@
 
 ---
 
-## 🎨 Logo del Proyecto
-> Diseñado por **Denisse** y **Uriel** con apoyo de IA — 18 de mayo de 2026
+## 📸 Avance — 26 de mayo de 2026
+> Capturas del progreso del día
 
-<img width="676" height="369" alt="image" src="https://github.com/user-attachments/assets/0063f8d4-4c19-4b4f-ba36-5862cae403e2" />
+![Avance 26 mayo](img/avance_26mayo.png)
