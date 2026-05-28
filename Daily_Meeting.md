@@ -46,9 +46,19 @@
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** | Documentar  | Documentar y agrgar tareas al tablero Kanban| Ninguno. |
+| **Denisse** | Documentar  | Documentar y agregar tareas al tablero Kanban| Ninguno. |
 | **Rosario** | Subir los archivos de la BD | Conectar la base e datos | Ninguno. |
 | **Uriel** | Crear los archivos de la BD | Ayudar a conectar la base datos  |Ninguno. |
 | **Oliver** | Hacer la 4ta historia de usuario |Hacer la 5ta historia de usuario | Ninguno. |
+
+---
+**Fecha:** 27 de mayo de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** |Documentar y agregar tareas al tablero Kanban  | Documentar y agrgar tareas al tablero Kanban| Ninguno. |
+| **Rosario** | Conectar la base e datos | Conectar la base e datos | Ninguno. |
+| **Uriel** | Ayudar a conectar la base datos | Ayudar a conectar la base datos  |Ninguno. |
+| **Oliver** | Hacer la 5ta historia de usuario |Hacer la 5ta historia de usuario | Ninguno. |
 
 ---
