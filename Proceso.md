@@ -1,6 +1,6 @@
 
 
-# 🛠️ Proceso del Proyecto
+#  Proceso del Proyecto
 ### Seguimiento de Operaciones
 
 ---
