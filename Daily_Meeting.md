@@ -56,9 +56,9 @@
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** |Documentar y agregar tareas al tablero Kanban  | Documentar y agrgar tareas al tablero Kanban| Ninguno. |
-| **Rosario** | Conectar la base e datos | Conectar la base e datos | Ninguno. |
-| **Uriel** | Ayudar a conectar la base datos | Ayudar a conectar la base datos  |Ninguno. |
-| **Oliver** | Hacer la 5ta historia de usuario |Hacer la 5ta historia de usuario | Ninguno. |
+| **Denisse** |Documentar y agregar tareas al tablero Kanban  | Documentar y modificar el nombre de nuestra página | Ninguno. |
+| **Rosario** | Conectar la base e datos |Creo el archivo "ELIMINAR.PHP" (Aún no funciona) | Ninguno. |
+| **Uriel** | Ayudar a conectar la base datos | Modificar el nombre de nuestra página  |Ninguno. |
+| **Oliver** | Hacer la 5ta historia de usuario |Hacer la 6ta historia de usuario | Ninguno. |
 
 ---
