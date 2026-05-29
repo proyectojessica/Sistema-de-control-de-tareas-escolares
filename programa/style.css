@@ -1,0 +1,670 @@
+/* ==========================================
+   SISTEMA DE CONTROL DE TAREAS ESCOLARES
+   HU02: 12/05/2026 - Estilos base y creaciÃ³n
+   HU03: 13/05/2026 - Estilos ediciÃ³n/eliminaciÃ³n
+   HU04: 14/05/2026 - Sin cambios visuales (localStorage)
+   HU05: 15/05/2026 - Editor enriquecido
+   ========================================== */
+
+/* ========== Variables CSS ========== */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f7f6f3;
+    --bg-tertiary: #ebeaed;
+    --text-primary: #37352f;
+    --text-secondary: #6b6966;
+    --border-color: #e0dfdb;
+    --accent-color: #2383e2;
+    --accent-hover: #1a6bc1;
+    --accent-light: rgba(35, 131, 226, 0.1);
+    --danger-color: #e03e3e;
+    --danger-hover: #c73636;
+    --card-bg: #ffffff;
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --card-hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    --button-bg: #f1f0ed;
+    --button-hover: #e4e3e0;
+    --input-bg: #fafaf9;
+    --modal-overlay: rgba(15, 15, 15, 0.6);
+    --toolbar-bg: #f7f6f3;
+    --editor-bg: #ffffff;
+}
+
+/* ========== Reset ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+/* ========== Header ========== */
+.header {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 24px;
+}
+
+.app-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* ========== Contenedor Principal ========== */
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* ========== BotÃ³n Agregar Nota ========== */
+.add-note-section {
+    margin-bottom: 24px;
+}
+
+.btn-add-note {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-add-note:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(35, 131, 226, 0.3);
+}
+
+.btn-icon-plus {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* ========== Tablero ========== */
+.board {
+    min-height: 400px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+    display: block;
+}
+
+.empty-state.hidden {
+    display: none;
+}
+
+.empty-state-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    font-size: 14px;
+}
+
+/* ========== Grid de Notas ========== */
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+/* ========== Tarjeta de Nota (HU02 + HU03 + HU05) ========== */
+.note-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    transition: all 0.2s ease;
+    box-shadow: var(--card-shadow);
+    animation: fadeIn 0.3s ease;
+    position: relative;
+}
+
+.note-card:hover {
+    box-shadow: var(--card-hover-shadow);
+    transform: translateY(-2px);
+}
+
+/* Acciones de la tarjeta (HU03) */
+.note-card-actions {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.note-card:hover .note-card-actions {
+    opacity: 1;
+}
+
+.btn-card-action {
+    background: var(--button-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+}
+
+.btn-card-action:hover {
+    background: var(--button-hover);
+}
+
+.btn-card-action.edit:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.btn-card-action.delete:hover {
+    background: var(--danger-color);
+    color: white;
+    border-color: var(--danger-color);
+}
+
+.note-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    margin-right: 60px;
+    word-break: break-word;
+}
+
+/* HU05: Vista previa con formato enriquecido */
+.note-content-preview {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    max-height: 80px;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+/* Estilos heredados del editor en la vista previa */
+.note-content-preview strong,
+.note-content-preview b {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.note-content-preview em,
+.note-content-preview i {
+    font-style: italic;
+}
+
+.note-content-preview u {
+    text-decoration: underline;
+}
+
+.note-content-preview h3 {
+    font-size: 16px;
+    margin: 4px 0;
+    font-weight: 600;
+}
+
+.note-content-preview h4 {
+    font-size: 14px;
+    margin: 4px 0;
+    font-weight: 600;
+}
+
+.note-content-preview ul,
+.note-content-preview ol {
+    padding-left: 20px;
+    margin: 4px 0;
+}
+
+.note-content-preview li {
+    margin: 2px 0;
+}
+
+.note-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.note-date {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.note-edit-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+/* AnimaciÃ³n de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========== Modal ========== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--modal-overlay);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal {
+    background: var(--bg-primary);
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.2s ease;
+}
+
+.modal-editor {
+    max-width: 650px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.modal-confirm {
+    max-width: 400px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-close-modal {
+    background: var(--button-bg);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s;
+    color: var(--text-primary);
+}
+
+.btn-close-modal:hover {
+    background: var(--button-hover);
+}
+
+/* ========== Formulario ========== */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 15px;
+    background: var(--input-bg);
+    color: var(--text-primary);
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(35, 131, 226, 0.15);
+}
+
+/* ========== HU05: Editor Enriquecido ========== */
+
+/* Barra de herramientas */
+.editor-toolbar {
+    display: flex;
+    gap: 2px;
+    padding: 8px;
+    background: var(--toolbar-bg);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.toolbar-btn {
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text-primary);
+    transition: all 0.15s ease;
+    min-width: 28px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.toolbar-btn:hover {
+    background: var(--accent-light);
+    color: var(--accent-color);
+}
+
+.toolbar-btn.active {
+    background: var(--accent-color);
+    color: white;
+}
+
+.toolbar-btn strong,
+.toolbar-btn em,
+.toolbar-btn u {
+    pointer-events: none;
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 20px;
+    background: var(--border-color);
+    margin: 0 4px;
+}
+
+/* Ãrea de contenido editable */
+.editor-content {
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 6px 6px;
+    background: var(--editor-bg);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    outline: none;
+    transition: border-color 0.2s;
+    word-break: break-word;
+}
+
+.editor-content:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(35, 131, 226, 0.15);
+}
+
+/* Placeholder para contenteditable */
+.editor-content:empty::before {
+    content: attr(placeholder);
+    color: #9b9a97;
+    pointer-events: none;
+}
+
+/* Estilos dentro del editor */
+.editor-content strong,
+.editor-content b {
+    font-weight: 600;
+}
+
+.editor-content em,
+.editor-content i {
+    font-style: italic;
+}
+
+.editor-content u {
+    text-decoration: underline;
+}
+
+.editor-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+.editor-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.editor-content ul,
+.editor-content ol {
+    padding-left: 24px;
+    margin: 8px 0;
+}
+
+.editor-content li {
+    margin: 4px 0;
+}
+
+.editor-content ul {
+    list-style-type: disc;
+}
+
+.editor-content ol {
+    list-style-type: decimal;
+}
+
+/* ========== Footer del Modal ========== */
+.modal-footer {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modal-footer-right {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: var(--accent-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+.btn-secondary {
+    background: var(--button-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--button-hover);
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: var(--danger-hover);
+}
+
+/* ========== ConfirmaciÃ³n ========== */
+.confirm-text {
+    font-size: 15px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.confirm-warning {
+    font-size: 13px;
+    color: var(--danger-color);
+}
+
+/* ========== Scrollbar estilizado ========== */
+.editor-content::-webkit-scrollbar,
+.modal-editor::-webkit-scrollbar {
+    width: 6px;
+}
+
+.editor-content::-webkit-scrollbar-track,
+.modal-editor::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.editor-content::-webkit-scrollbar-thumb,
+.modal-editor::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 16px;
+    }
+    
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal {
+        padding: 20px;
+        margin: 16px;
+    }
+
+    .modal-editor {
+        max-height: 90vh;
+    }
+
+    .editor-content {
+        max-height: 250px;
+    }
+
+    .modal-footer {
+        flex-direction: column;
+    }
+
+    .modal-footer-right {
+        width: 100%;
+    }
+
+    .modal-footer-right .btn {
+        flex: 1;
+    }
+
+    .editor-toolbar {
+        gap: 1px;
+        padding: 6px;
+    }
+
+    .toolbar-btn {
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+}
