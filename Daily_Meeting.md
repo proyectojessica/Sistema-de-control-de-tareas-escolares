@@ -62,3 +62,12 @@
 | **Oliver** | Hacer la 5ta historia de usuario |Hacer la 6ta historia de usuario | Ninguno. |
 
 ---
+
+## 28 de mayo de 2026
+
+| Miembro |  Completado (Ayer) |  Plan de Hoy | Bloqueos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** | Documentar y modificar el nombre de la página | Escuchar las exposiciones de los demás | — |
+| **Rosario** | Crear archivo `ELIMINAR.PHP` *(aún no funciona)* | Escuchar las exposiciones de los demás | — |
+| **Uriel** | Modificar el nombre de la página | Escuchar las exposiciones de los demás | — |
+| **Oliver** | Hacer la 6ta historia de usuario | Escuchar las exposiciones de los demás | — |
