@@ -44,7 +44,7 @@
 
 <img width="1051" height="700" alt="image" src="https://github.com/user-attachments/assets/432aa73a-6d81-412e-ba03-8c4fc75c69ad" />
 
-## 📸 Avance — 26 de mayo de 2026
+## 📸 Avance — 27 de mayo de 2026
 > Capturas del progreso del día
 <img width="1330" height="630" alt="image" src="https://github.com/user-attachments/assets/fc2cae55-6f82-4e32-872f-d0c161b8a584" />
 
