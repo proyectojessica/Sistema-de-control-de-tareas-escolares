@@ -63,7 +63,7 @@
 
 ---
 
-28 de mayo de 2026
+**Fecha:** 28 de mayo de 2026
 
 | Miembro |  Completado (Ayer) |  Plan de Hoy | Bloqueos |
 | :--- | :--- | :--- | :--- |
@@ -81,3 +81,13 @@
 | **Rosario** | Escuchar las exposiciones de los demás | Exponer nuestros avances  | Ninguno. |
 | **Uriel** | Escuchar las exposiciones de los demás | Exponer nuestros avances  |Ninguno. |
 | **Oliver** | Escuchar las exposiciones de los demás | Exponer nuestros avances| Ninguno. |
+
+---
+**Fecha:** 02 de Junio de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** |Documentar y exponer nuestros avances | Documentar y exponer nuestros avances | Ninguno. |
+| **Rosario** |Exponer nuestros avances | Hacer una tabla sprint  | Ninguno. |
+| **Uriel** |Exponer nuestros avances | Hacer el código de inicio de sesión |Ninguno. |
+| **Oliver** |Exponer nuestros avances |Avances con la interfaz| Ninguno. |
