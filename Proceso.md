@@ -47,6 +47,8 @@
 ## 📸 Avance — 27 de mayo de 2026
 > Capturas del progreso del día
 <img width="1330" height="630" alt="image" src="https://github.com/user-attachments/assets/fc2cae55-6f82-4e32-872f-d0c161b8a584" />
+
+## Diseño d nuestra interfaz - 02 de Junio 2026
 <img width="730" height="916" alt="image" src="https://github.com/user-attachments/assets/0df3058d-a7f1-4b5e-aa00-b60452aa71a2" />
 
 
