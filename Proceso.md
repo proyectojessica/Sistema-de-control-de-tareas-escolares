@@ -42,3 +42,5 @@
 * **Fecha de actualización:** 01 de Junio de 2026
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89836ba4-7def-4ba0-a14f-149faa05dc56" />
 
+> ### 🌐 Nombre del Sitio: **Kairos**
+> 💡 **Significado:** "El momento justo, tiempo oportuno"
