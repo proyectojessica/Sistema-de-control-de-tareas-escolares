@@ -12,6 +12,10 @@
 
 <img width="676" height="369" alt="image" src="https://github.com/user-attachments/assets/0063f8d4-4c19-4b4f-ba36-5862cae403e2" />
 
+## 🎨 Logo del Proyecto
+* **Fecha de actualización:** 01 de Junio de 2026
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89836ba4-7def-4ba0-a14f-149faa05dc56" />
+
 ## 📋 Tablero Kanban
 > Estado del tablero al **25 de mayo de 2026**
 
@@ -40,8 +44,10 @@
 
 <img width="1051" height="700" alt="image" src="https://github.com/user-attachments/assets/432aa73a-6d81-412e-ba03-8c4fc75c69ad" />
 
-## 🎨 Logo del Proyecto
-* **Fecha de actualización:** 01 de Junio de 2026
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89836ba4-7def-4ba0-a14f-149faa05dc56" />
+## 📸 Avance — 26 de mayo de 2026
+> Capturas del progreso del día
+<img width="1501" height="403" alt="image" src="https://github.com/user-attachments/assets/a9629743-40c8-4c63-8a20-93b99c6cdedc" />
+<img width="1066" height="567" alt="image" src="https://github.com/user-attachments/assets/747374d9-113e-4f98-a34a-14d255e0a1b4" />
+
 
 
