@@ -63,7 +63,7 @@
 
 ---
 
-## 28 de mayo de 2026
+28 de mayo de 2026
 
 | Miembro |  Completado (Ayer) |  Plan de Hoy | Bloqueos |
 | :--- | :--- | :--- | :--- |
@@ -71,3 +71,13 @@
 | **Rosario** | Crear archivo `ELIMINAR.PHP` *(aún no funciona)* | Escuchar las exposiciones de los demás | — |
 | **Uriel** | Modificar el nombre de la página | Escuchar las exposiciones de los demás | — |
 | **Oliver** | Hacer la 6ta historia de usuario | Escuchar las exposiciones de los demás | — |
+
+---
+**Fecha:** 01 de Junio de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** |Escuchar las exposiciones de los demás | Documentar y exponer nuestros avances | Ninguno. |
+| **Rosario** | Escuchar las exposiciones de los demás | Exponer nuestros avances  | Ninguno. |
+| **Uriel** | Escuchar las exposiciones de los demás | Exponer nuestros avances  |Ninguno. |
+| **Oliver** | Escuchar las exposiciones de los demás | Exponer nuestros avances| Ninguno. |
