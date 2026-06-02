@@ -73,15 +73,8 @@
 | **Oliver** | Hacer la 6ta historia de usuario | Escuchar las exposiciones de los demás | — |
 
 ---
-**Fecha:** 01 de Junio de 2026
-
-| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
-| :--- | :--- | :--- | :--- |
-| **Denisse** |Escuchar las exposiciones de los demás | Documentar y exponer nuestros avances | Ninguno. |
-| **Rosario** | Escuchar las exposiciones de los demás | Exponer nuestros avances  | Ninguno. |
-| **Uriel** | Escuchar las exposiciones de los demás | Exponer nuestros avances  |Ninguno. |
-| **Oliver** | Escuchar las exposiciones de los demás | Exponer nuestros avances| Ninguno. |
-
+**Fecha:** 01 de Junio de 2026 
+ > Reporte general de avances — cada miembro presentó su progreso al equipo.
 ---
 **Fecha:** 02 de Junio de 2026
 
