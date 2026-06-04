@@ -13,7 +13,7 @@
 <img width="676" height="369" alt="image" src="https://github.com/user-attachments/assets/0063f8d4-4c19-4b4f-ba36-5862cae403e2" />
 
 ## 🎨 Logo del Proyecto
-* **Fecha de actualización:** 27 de Junio de 2026
+* **Fecha de actualización:** 27 de Mayo de 2026
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89836ba4-7def-4ba0-a14f-149faa05dc56" />
 
 ## 📋 Tablero Kanban
