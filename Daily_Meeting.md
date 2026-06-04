@@ -80,7 +80,17 @@
 
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
-| **Denisse** |Documentar y exponer nuestros avances | Documentar y exponer nuestros avances | Ninguno. |
+| **Denisse** |Documentar y exponer nuestros avances | Documentar y terminar diapositivas | Ninguno. |
 | **Rosario** |Exponer nuestros avances | Hacer una tabla sprint  | Ninguno. |
 | **Uriel** |Exponer nuestros avances | Hacer el código de inicio de sesión |Ninguno. |
 | **Oliver** |Exponer nuestros avances |Avances con la interfaz| Ninguno. |
+
+---
+**Fecha:** 03 de Junio de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** |Documentar y terminar diapositivas | Documentar | Ninguno. |
+| **Rosario** |Hacer una tabla sprint  |   | Ninguno. |
+| **Uriel** |Hacer el código de inicio de sesión | Hacer el código de inicio de sesión |Ninguno. |
+| **Oliver** |Avances con la interfaz |Avances con la interfaz | Ninguno. |
