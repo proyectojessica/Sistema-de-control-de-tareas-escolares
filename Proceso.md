@@ -20,7 +20,7 @@
 <img width="1015" height="537" alt="image" src="https://github.com/user-attachments/assets/bb3f6e9a-4a9c-4c10-92d1-1c4b254b0aea" />
 
 ## Diseño de nuestra interfaz
-* **Fecha de actualización:** 15 de Mayo de 2026
+* **Fecha de actualización:** 03 de Mayo de 2026
 <img width="730" height="916" alt="image" src="https://github.com/user-attachments/assets/0df3058d-a7f1-4b5e-aa00-b60452aa71a2" />
 
 ## 📋 Tablero Kanban
