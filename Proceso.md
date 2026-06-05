@@ -55,11 +55,6 @@
 > Capturas del progreso del día
 <img width="1330" height="630" alt="image" src="https://github.com/user-attachments/assets/fc2cae55-6f82-4e32-872f-d0c161b8a584" />
 
-## Diseño d nuestra interfaz - 02 de Junio 2026
-<img width="730" height="916" alt="image" src="https://github.com/user-attachments/assets/0df3058d-a7f1-4b5e-aa00-b60452aa71a2" />
-
-<img width="1015" height="537" alt="image" src="https://github.com/user-attachments/assets/bb3f6e9a-4a9c-4c10-92d1-1c4b254b0aea" />
-
 ## base de datos
 <img width="883" height="367" alt="image" src="https://github.com/user-attachments/assets/e3d31400-3b75-44da-8198-9d7b450457e3" />
 
