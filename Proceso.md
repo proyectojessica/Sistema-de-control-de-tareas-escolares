@@ -60,5 +60,8 @@
 
 <img width="1015" height="537" alt="image" src="https://github.com/user-attachments/assets/bb3f6e9a-4a9c-4c10-92d1-1c4b254b0aea" />
 
+## base de datos
+<img width="883" height="367" alt="image" src="https://github.com/user-attachments/assets/e3d31400-3b75-44da-8198-9d7b450457e3" />
+
 
 
