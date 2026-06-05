@@ -91,6 +91,16 @@
 | Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
 | :--- | :--- | :--- | :--- |
 | **Denisse** |Documentar y terminar diapositivas | Documentar | Ninguno. |
-| **Rosario** |Hacer una tabla sprint  |   | Ninguno. |
-| **Uriel** |Hacer el código de inicio de sesión | Hacer el código de inicio de sesión |Ninguno. |
-| **Oliver** |Avances con la interfaz |Avances con la interfaz | Ninguno. |
+| **Rosario** |Hacer una tabla sprint  | Sin actividad (Servidor caído)  | Ninguno. |
+| **Uriel** |Hacer el código de inicio de sesión |Sin actividad (Servidor caído)|Ninguno. |
+| **Oliver** |Avances con la interfaz |Sin actividad (Servidor caído) | Ninguno. |
+
+---
+**Fecha:** 04 de Junio de 2026
+
+| Miembro | Tareas Completadas (Ayer) | Plan de Hoy | Bloqueos / Impedimentos |
+| :--- | :--- | :--- | :--- |
+| **Denisse** |Documentar|Documentar| Ninguno. |
+| **Rosario** |Sin actividad (Servidor caído)| Hacer pruebas finales | Ninguno. |
+| **Uriel** |Sin actividad (Servidor caído)|Agrego inicio de sesión y crear cuenta|Ninguno. |
+| **Oliver** |Sin actividad (Servidor caído) |Hacer pruebas finales | Ninguno. |
