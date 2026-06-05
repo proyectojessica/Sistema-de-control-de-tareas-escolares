@@ -16,7 +16,7 @@
 * **Fecha de actualización:** 27 de Mayo de 2026
 <img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/89836ba4-7def-4ba0-a14f-149faa05dc56" />
 
-## Diseño de nuestra interfaz - 15 de Mayo 2026
+## Diseño de nuestra interfaz - 13 de Mayo 2026
 <img width="1015" height="537" alt="image" src="https://github.com/user-attachments/assets/bb3f6e9a-4a9c-4c10-92d1-1c4b254b0aea" />
 
 ## Diseño de nuestra interfaz
