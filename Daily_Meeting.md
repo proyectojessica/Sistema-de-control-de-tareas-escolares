@@ -104,3 +104,8 @@
 | **Rosario** |Sin actividad (Servidor caído)| Hacer pruebas finales | Ninguno. |
 | **Uriel** |Sin actividad (Servidor caído)|Agrego inicio de sesión y crear cuenta|Ninguno. |
 | **Oliver** |Sin actividad (Servidor caído) |Hacer pruebas finales | Ninguno. |
+
+---
+**Fecha:** 05 de Junio de 2026
+
+> Durante el último día, el equipo finalizó las actividades pendientes, consolidó la documentación técnica y validó el correcto funcionamiento de la aplicación para su liberación.
