@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>kairos — Acceso</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  /* ==========================================
+     RESET Y VARIABLES
+     ========================================== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  :root {
+    --bg: #d6cfc4;
+    --surface: #f5f1eb;
+    --surface2: #e8e2d8;
+    --border: #c4bdb2;
+    --accent: #1e2d40;
+    --accent2: #6b7280;
+    --text: #111111;
+    --muted: #6b7280;
+    --danger: #b91c1c;
+    --success: #166534;
+  }
+
+  /* ==========================================
+     BASE Y BACKGROUND
+     ========================================== */
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    overflow: hidden;
+  }
+
+  .bg-orbs { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+  .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.18; animation: float 12s ease-in-out infinite; }
+  .orb1 { width: 420px; height: 420px; background: #1e2d40; top: -100px; left: -80px; animation-delay: 0s; }
+  .orb2 { width: 320px; height: 320px; background: #6b7280; bottom: -80px; right: -60px; animation-delay: -5s; }
+  .orb3 { width: 260px; height: 260px; background: #111111; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: -8s; }
+  
+  @keyframes float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-30px) scale(1.05); } }
+  
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background-image: linear-gradient(rgba(30,45,64,0.07) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(30,45,64,0.07) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* ==========================================
+     CONTENEDOR PRINCIPAL - LOGO MAS PEQUEÑO
+     ========================================== */
+  .card-wrap {
+    position: relative;
+    z-index: 1;
+    width: min(440px, 92vw);
+    margin: 0 auto;
+  }
+
+  /* LOGO REDISEÑADO - OCUPA MENOS ESPACIO */
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideDown 0.6s cubic-bezier(0.22,1,0.36,1) both;
+  }
+
+  .logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--accent), #374151);
+    border-radius: 18px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 30px rgba(30,45,64,0.25);
+    padding: 8px;
+  }
+
+  .logo-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+
+  .logo span { color: var(--accent); }
+
+  .logo p {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 3px;
+    font-weight: 300;
+  }
+
+  /* ==========================================
+     TARJETA PRINCIPAL
+     ========================================== */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 28px 32px 28px;
+    box-shadow: 0 24px 80px rgba(30,45,64,0.18);
+    animation: slideUp 0.6s cubic-bezier(0.22,1,0.36,1) 0.1s both;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ==========================================
+     TABS
+     ========================================== */
+  .tabs {
+    display: flex;
+    background: var(--surface2);
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 24px;
+    gap: 4px;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 9px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--muted);
+    border-radius: 9px;
+    transition: all 0.25s;
+  }
+
+  .tab-btn.active {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(30,45,64,0.25);
+  }
+
+  /* ==========================================
+     FORMULARIOS
+     ========================================== */
+  .form-view { display: none; }
+  .form-view.active { display: block; animation: fadeIn 0.3s ease both; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .field { margin-bottom: 16px; }
+  
+  .field label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+
+  .input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-icon {
+    position: absolute;
+    left: 14px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+  }
+
+  .input-icon svg { width: 16px; height: 16px; }
+
+  input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 11px;
+    padding: 11px 14px 11px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    -webkit-appearance: none;
+  }
+
+  input::placeholder { color: var(--muted); }
+
+  input:focus, select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(30,45,64,0.15);
+  }
+
+  select { cursor: pointer; }
+  select option { background: var(--surface); color: var(--text); }
+
+  .toggle-pass {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    display: flex;
+    padding: 4px;
+    transition: color 0.2s;
+  }
+
+  .toggle-pass:hover { color: var(--text); }
+  .toggle-pass svg { width: 16px; height: 16px; }
+
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  /* ==========================================
+     INDICADOR DE FORTALEZA
+     ========================================== */
+  .strength-bar { display: flex; gap: 4px; margin-top: 8px; }
+  .seg { flex: 1; height: 3px; border-radius: 9px; background: var(--border); transition: background 0.3s; }
+  .seg.active.s1 { background: var(--danger); }
+  .seg.active.s2 { background: var(--accent2); }
+  .seg.active.s3, .seg.active.s4 { background: var(--success); }
+  .strength-label { font-size: 11px; color: var(--muted); margin-top: 5px; }
+
+  /* ==========================================
+     CHECKBOX Y ENLACES
+     ========================================== */
+  .check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .check-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    accent-color: var(--accent);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .check-row label {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0;
+    text-transform: none;
+    letter-spacing: 0;
+    cursor: pointer;
+  }
+
+  .check-row a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .check-row a:hover { text-decoration: underline; }
+
+  .forgot {
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 18px;
+  }
+
+  .forgot a {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .forgot a:hover { text-decoration: underline; }
+
+  /* ==========================================
+     BOTONES
+     ========================================== */
+  .btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent), #374151);
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(30,45,64,0.3);
+    transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+
+  .btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(30,45,64,0.4);
+  }
+
+  .btn-submit:active { transform: translateY(0); }
+  .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+  .btn-submit .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    transform: scale(0);
+    animation: ripple 0.55s ease-out;
+    pointer-events: none;
+  }
+
+  @keyframes ripple { to { transform: scale(4); opacity: 0; } }
+
+  /* ==========================================
+     DIVISOR Y SOCIAL
+     ========================================== */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .social-row { display: flex; gap: 10px; }
+
+  .btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--surface2);
+    border: 1.5px solid var(--border);
+    border-radius: 11px;
+    padding: 10px 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .btn-social:hover {
+    background: var(--border);
+    border-color: var(--muted);
+  }
+
+  .btn-social svg { width: 18px; height: 18px; }
+
+  /* ==========================================
+     TOAST NOTIFICACIONES
+     ========================================== */
+  .toast {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%) translateY(60px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(30,45,64,0.2);
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), opacity 0.4s;
+    opacity: 0;
+    z-index: 100;
+    white-space: nowrap;
+  }
+
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  .toast-icon { font-size: 16px; }
+
+  /* ==========================================
+     SCROLLBAR Y OTROS
+     ========================================== */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 9px; }
+
+  .spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.4);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .config-banner {
+    background: #FFF3CD;
+    border: 1px solid #F0D080;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 18px;
+    font-size: 12px;
+    color: #92400E;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .config-banner code {
+    background: rgba(0,0,0,0.08);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-size: 11px;
+  }
+
+  /* ==========================================
+     RESPONSIVE
+     ========================================== */
+  @media (max-width: 480px) {
+    .card { padding: 20px 20px 20px; }
+    .logo h1 { font-size: 20px; }
+    .logo-icon { width: 48px; height: 48px; }
+    .logo-icon svg { width: 22px; height: 22px; }
+    .row-2 { gap: 10px; }
+  }
+</style>
+</head>
+<body>
+ 
+<script>
+  const API_BASE = 'http://186.96.178.180/alu/p24330050470371/proyecto1/backend';
+  const ENDPOINTS = {
+    login:    `${API_BASE}/login.php`,
+    register: `${API_BASE}/register.php`,
+    forgot:   `${API_BASE}/forgot_password.php`,
+  };
+</script>
+ 
+<div class="bg-orbs">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+</div>
+<div class="bg-grid"></div>
+ 
+<div class="card-wrap">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M12 6v6l4 2" stroke="white" fill="none"/>
+        <circle cx="12" cy="12" r="10" stroke="white" fill="none"/>
+        <path d="M12 2v4M22 12h-4M12 20v4M4 12H2" stroke="white" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <h1>kai<span>ros</span></h1>
+    <p>Tu organizador escolar personal</p>
+  </div>
+ 
+  <div class="card">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('login')">Iniciar Sesion</button>
+      <button class="tab-btn" onclick="switchTab('register')">Crear Cuenta</button>
+    </div>
+ 
+    <div class="form-view active" id="form-login">
+      <div class="field">
+        <label>Correo electronico</label>
+        <div class="input-wrap">
+          <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></span>
+          <input type="email" placeholder="tucorreo@escuela.mx" id="login-email"/>
+        </div>
+      </div>
+      <div class="field">
+        <label>Contraseña</label>
+        <div class="input-wrap">
+          <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <input type="password" placeholder="••••••••" id="login-pass"/>
+          <button class="toggle-pass" onclick="togglePass('login-pass', this)" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+      </div>
+    
+      <button class="btn-submit" id="btn-login" onclick="handleLogin(event)">Entrar a mis tareas →</button>
+      <div class="divider">o continuar con</div>
+      <div class="social-row"></div>
+    </div>
+ 
+    <div class="form-view" id="form-register">
+      <div class="row-2">
+        <div class="field">
+          <label>Nombre</label>
+          <div class="input-wrap">
+            <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+            <input type="text" placeholder="Ana" id="reg-nombre"/>
+          </div>
+        </div>
+        <div class="field">
+          <label>Apellido</label>
+          <div class="input-wrap">
+            <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+            <input type="text" placeholder="Garcia" id="reg-apellido"/>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Correo electronico</label>
+        <div class="input-wrap">
+          <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></span>
+          <input type="email" placeholder="tucorreo@escuela.mx" id="reg-email"/>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label>Grado escolar</label>
+          <div class="input-wrap">
+            <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
+            <select id="reg-grado">
+              <option value="">Selecciona</option>
+              <option>1° Primaria</option><option>2° Primaria</option>
+              <option>3° Primaria</option><option>4° Primaria</option>
+              <option>5° Primaria</option><option>6° Primaria</option>
+              <option>1° Secundaria</option><option>2° Secundaria</option>
+              <option>3° Secundaria</option>
+              <option>1° Preparatoria</option><option>2° Preparatoria</option>
+              <option>3° Preparatoria</option>
+              <option>Universidad</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label>Turno</label>
+          <div class="input-wrap">
+            <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+            <select id="reg-turno">
+              <option>Matutino</option>
+              <option>Vespertino</option>
+              <option>Nocturno</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label>Contraseña</label>
+        <div class="input-wrap">
+          <span class="input-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+          <input type="password" placeholder="••••••••" id="reg-pass" oninput="checkStrength(this.value)"/>
+          <button class="toggle-pass" onclick="togglePass('reg-pass', this)" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+        <div class="strength-bar" id="str-bar">
+          <div class="seg" id="s1"></div><div class="seg" id="s2"></div>
+          <div class="seg" id="s3"></div><div class="seg" id="s4"></div>
+        </div>
+        <p class="strength-label" id="str-label"></p>
+      </div>
+      <div class="check-row">
+        <input type="checkbox" id="reg-terms"/>
+        <label for="reg-terms">Acepto los <a href="#">Terminos de uso</a> y la <a href="#">Politica de privacidad</a></label>
+      </div>
+      <button class="btn-submit" id="btn-register" onclick="handleRegister(event)">Crear mi cuenta →</button>
+    </div>
+  </div>
+</div>
+ 
+<div class="toast" id="toast">
+  <span class="toast-icon" id="toast-icon"></span>
+  <span id="toast-msg"></span>
+</div>
+ 
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab-btn').forEach((b,i) =>
+    b.classList.toggle('active', (tab==='login'&&i===0)||(tab==='register'&&i===1)));
+  document.querySelectorAll('.form-view').forEach(f => f.classList.remove('active'));
+  document.getElementById('form-' + tab).classList.add('active');
+}
+ 
+function togglePass(id, btn) {
+  const inp = document.getElementById(id);
+  const isPass = inp.type === 'password';
+  inp.type = isPass ? 'text' : 'password';
+  btn.innerHTML = isPass
+    ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>`
+    : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>`;
+}
+ 
+function checkStrength(val) {
+  const segs  = ['s1','s2','s3','s4'].map(id => document.getElementById(id));
+  const labels = ['', 'Debil', 'Regular', 'Buena', 'Fuerte'];
+  let score = 0;
+  if(val.length >= 8)          score++;
+  if(/[A-Z]/.test(val))        score++;
+  if(/[0-9]/.test(val))        score++;
+  if(/[^A-Za-z0-9]/.test(val)) score++;
+  segs.forEach((s,i) => {
+    s.className = 'seg';
+    if(i < score) s.classList.add('active', 's'+score);
+  });
+  document.getElementById('str-label').textContent = val.length ? labels[score] : '';
+}
+ 
+function showToast(msg) {
+  const t    = document.getElementById('toast');
+  const icon = msg.match(/^[^\\w\\s]*/);
+  const iconChar = (icon && icon[0]) || 'ℹ️';
+  const text = msg.replace(/^[^\\w\\s]*/, '').trim();
+  document.getElementById('toast-icon').textContent = iconChar;
+  document.getElementById('toast-msg').textContent  = text || msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+ 
+function setLoading(btnId, loading, originalText) {
+  const btn = document.getElementById(btnId);
+  btn.disabled = loading;
+  btn.innerHTML = loading ? `<span class="spinner"></span> Cargando...` : originalText;
+}
+ 
+function addRipple(e) {
+  const btn  = e.currentTarget;
+  const r    = document.createElement('span');
+  r.className = 'ripple';
+  const rect = btn.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+  r.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
+  btn.appendChild(r);
+  setTimeout(() => r.remove(), 600);
+}
+document.querySelectorAll('.btn-submit').forEach(b => b.addEventListener('click', addRipple));
+ 
+async function apiCall(url, body) {
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(body),
+    credentials: 'same-origin',
+  });
+  let data;
+  try { data = await res.json(); }
+  catch (_) { data = { ok: false, message: `Error del servidor (HTTP ${res.status})` }; }
+  return { status: res.status, ...data };
+}
+ 
+async function handleLogin(e) {
+  const email = document.getElementById('login-email').value.trim();
+  const pass  = document.getElementById('login-pass').value;
+  if (!email || !pass)                       { showToast('⚠️ Completa todos los campos'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast('⚠️ Correo invalido'); return; }
+  setLoading('btn-login', true, 'Entrar a mis tareas →');
+  try {
+    const data = await apiCall(ENDPOINTS.login, { email, password: pass });
+    if (data.ok) {
+      if (data.token) localStorage.setItem('kairos_token', data.token);
+      if (data.usuario) localStorage.setItem('kairos_user', JSON.stringify(data.usuario));
+      showToast('✅ Bienvenido/a de vuelta!');
+      setTimeout(() => { window.location.href = data.redirect || 'dashboard.html'; }, 1200);
+    } else {
+      showToast('❌ ' + (data.message || 'Credenciales incorrectas'));
+    }
+  } catch (err) {
+    showToast('🔌 No se pudo conectar con el servidor');
+    console.error('[kairos] login error:', err);
+  } finally {
+    setLoading('btn-login', false, 'Entrar a mis tareas →');
+  }
+}
+ 
+async function handleRegister(e) {
+  const nombre   = document.getElementById('reg-nombre').value.trim();
+  const apellido = document.getElementById('reg-apellido').value.trim();
+  const email    = document.getElementById('reg-email').value.trim();
+  const grado    = document.getElementById('reg-grado').value;
+  const turno    = document.getElementById('reg-turno').value;
+  const pass     = document.getElementById('reg-pass').value;
+  const terms    = document.getElementById('reg-terms').checked;
+  if (!nombre || !apellido || !email || !grado || !pass) { showToast('⚠️ Completa todos los campos'); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))        { showToast('⚠️ Correo invalido'); return; }
+  if (pass.length < 6)                                    { showToast('⚠️ La contraseña es muy corta'); return; }
+  if (!terms)                                             { showToast('⚠️ Acepta los terminos para continuar'); return; }
+  setLoading('btn-register', true, 'Crear mi cuenta →');
+  try {
+    const data = await apiCall(ENDPOINTS.register, { nombre, apellido, email, password: pass, grado, turno });
+    if (data.ok) {
+      showToast('🎉 Cuenta creada exitosamente!');
+      setTimeout(() => switchTab('login'), 1500);
+    } else {
+      showToast('❌ ' + (data.message || 'No se pudo crear la cuenta'));
+    }
+  } catch (err) {
+    showToast('🔌 No se pudo conectar con el servidor');
+    console.error('[kairos] register error:', err);
+  } finally {
+    setLoading('btn-register', false, 'Crear mi cuenta →');
+  }
+}
+</script>
+</body>
+</html>

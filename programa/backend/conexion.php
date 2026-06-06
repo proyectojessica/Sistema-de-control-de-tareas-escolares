@@ -7,7 +7,7 @@ $basedatos = 'bd24330050470371';
 $conn = new mysqli($host, $usuario, $contrasena, $basedatos);
 
 if ($conn->connect_error) {
-    die("CONEXIÃ“N FALLIDA: " . $conn->connect_error);
+    die("CONEXIÓN FALLIDA: " . $conn->connect_error);
 }
 
 ?>
